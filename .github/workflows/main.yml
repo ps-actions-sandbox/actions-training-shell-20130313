@@ -1,0 +1,19 @@
+name:  My first CI
+
+defaults:
+  run:
+    shell: pwsh
+    
+on: 
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    name: "Build the code"
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          write-output "yay! 🚀"
