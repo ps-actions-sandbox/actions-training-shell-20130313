@@ -17,3 +17,7 @@ jobs:
     steps:
       - run: |
           write-output "yay! 🚀"
+      - uses: jessehouwing-actions/hello-world@v1
+        with:
+          who-to-greet: "The Shell class!"
+
