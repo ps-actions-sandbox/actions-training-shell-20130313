@@ -22,7 +22,7 @@ jobs:
         with:
           who-to-greet: "The Shell class!"
       - name: Upload a Build Artifact
-      - uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v3.1.2
         with:
           # Artifact name
           name: package
